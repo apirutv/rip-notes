@@ -33,6 +33,15 @@ sudo apt-get upgrades
 ## homebridge on rpi
 https://github.com/nfarina/homebridge/wiki/Running-HomeBridge-on-a-Raspberry-Pi
 
+## configure waveshare 5 inch screen
+https://www.waveshare.com/wiki/5inch_HDMI_LCD_(B)  
+append to following settings to /boot/config.txt  
+max_usb_current=1  
+hdmi_group=2  
+hdmi_mode=87  
+hdmi_cvt 800 480 60 6 0 0 0  
+hdmi_drive=1  
+
 
 
 
