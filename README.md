@@ -43,6 +43,11 @@ hdmi_cvt 800 480 60 6 0 0 0
 hdmi_drive=1  
 
 ## enable sound
+add the following to /boot/config.txt
+dtparam=audio=1  
+
+uninstall PulseAudio
+sudo apt-get remove PulseAudio ??
 
 
 
