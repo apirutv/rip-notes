@@ -14,3 +14,16 @@ Run script
 
 
 ## set screen resolution
+https://www.raspberrypi.org/forums/viewtopic.php?f=108&t=184762
+
+## start GUI
+startx
+
+## see IP address
+ip addr show
+
+## shutdown/reboot
+sudo shutdown now  
+sudo reboot
+
+
