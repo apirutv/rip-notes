@@ -31,7 +31,7 @@ sudo apt-get updates
 sudo apt-get upgrades
 
 ## homebridge on rpi
-https://www.youtube.com/redirect?v=g4Smfn1Q5Qc&event=video_description&q=https%3A%2F%2Fgithub.com%2Fnfarina%2Fhomebridge%2Fwiki%2FRunning-HomeBridge-on-a-Raspberry-Pi&redir_token=SL8RgorReXnV9oP8FZKbLf44Ybp8MTUyOTkzNDMzMkAxNTI5ODQ3OTMy
+https://github.com/nfarina/homebridge/wiki/Running-HomeBridge-on-a-Raspberry-Pi
 
 
 
