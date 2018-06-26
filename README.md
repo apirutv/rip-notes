@@ -73,6 +73,18 @@ echo "  >> starting Google assistant in 5 seconds, ^c to cancel ..."
 sleep 5  
 /home/pi/python/voicekit-pi-gpio/voice_gpio.py
 
+## which Wifi SSID being connected to
+
+iwconfig
+
+## connect to specific Wifi
+
+sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
+
+
+
+
+
 
 
 
