@@ -88,3 +88,7 @@ INSTALL I2C-TOOLS AND SMBUS
 sudo apt-get install i2c-tools  
 sudo apt-get install python-smbus  
 
+http://www.circuitbasics.com/raspberry-pi-i2c-lcd-set-up-and-programming/
+
+
+
