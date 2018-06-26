@@ -66,6 +66,13 @@ static ip_address=192.168.0.2/24
 static routers=192.168.0.1  
 static domain_name_servers=192.168.0.1  
 
+## auto start script under pi user
+
+sudo vi /home/pi/.bashrc  
+echo "  >> starting Google assistant in 5 seconds, ^c to cancel ..."  
+sleep 5  
+/home/pi/python/voicekit-pi-gpio/voice_gpio.py
+
 
 
 
