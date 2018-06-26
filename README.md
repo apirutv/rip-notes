@@ -79,11 +79,12 @@ iwconfig
 
 sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
 
+## installing I2C LCD
 
+enable I2C interface on raspberry pi  
+sudo raspi-config  
 
-
-
-
-
-
+INSTALL I2C-TOOLS AND SMBUS  
+sudo apt-get install i2c-tools  
+sudo apt-get install python-smbus  
 
