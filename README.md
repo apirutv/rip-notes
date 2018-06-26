@@ -49,6 +49,23 @@ dtparam=audio=1
 uninstall PulseAudio
 sudo apt-get remove PulseAudio ??
 
+##static IP
+Type sudo nano /etc/dhcpcd.conf at the command prompt  
+
+Scroll to the bottom of the script, and add the following lines:
+
+interface eth0
+
+static ip_address=192.168.0.2/24  
+static routers=192.168.0.1  
+static domain_name_servers=192.168.0.1  
+
+interface wlan0
+
+static ip_address=192.168.0.2/24  
+static routers=192.168.0.1  
+static domain_name_servers=192.168.0.1  
+
 
 
 
