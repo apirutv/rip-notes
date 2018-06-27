@@ -1,6 +1,13 @@
 # rip-notes
 notes for raspberry pi
 
+## activate google voice hat
+sudo nano /boot/config.txt  
+add these two lines to the end of the file:  
+dtoverlay=i2s-mmap  
+dtoverlay=googlevoicehat-soundcard  
+reboot the pi  
+
 ## Fliping upside-down rpi 7 inch touch screen
 
 Download sh script from GitHub  
