@@ -1,6 +1,9 @@
 # rip-notes
 notes for raspberry pi
 
+## IP address
+hostname -I
+
 ## activate google voice hat
 sudo nano /boot/config.txt  
 add these two lines to the end of the file:  
