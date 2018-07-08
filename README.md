@@ -110,6 +110,11 @@ http://www.circuitbasics.com/how-to-set-up-the-dht11-humidity-sensor-on-the-rasp
 
 ## LCD Matrix
 
+software:  
+$ git clone https://github.com/hzeller/rpi-rgb-led-matrix/
+$ make  
+$ sudo ./demo -t 15 -D 1 runtext.ppm --led-rows=32 --led-cols=64 --led-chain=2  
+
 product page:  
 https://www.dfrobot.com/wiki/index.php/64x32_RGB_LED_Matrix_-_4mm_pitch_SKU:DFR0460  
 
