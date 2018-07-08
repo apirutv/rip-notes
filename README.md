@@ -108,5 +108,17 @@ sudo python setup.py install
 
 http://www.circuitbasics.com/how-to-set-up-the-dht11-humidity-sensor-on-the-raspberry-pi/
 
+## LCD Matrix
+
+product page:  
+https://www.dfrobot.com/wiki/index.php/64x32_RGB_LED_Matrix_-_4mm_pitch_SKU:DFR0460  
+
+How to and software installation:  
+https://learn.adafruit.com/connecting-a-16x32-rgb-led-matrix-panel-to-a-raspberry-pi/testing
+
+Hardware indepth information:  
+https://github.com/hzeller/rpi-rgb-led-matrix/blob/master/wiring.md
+
+
 
 
