@@ -150,3 +150,6 @@ sudo pip install docker-compose
 
 https://dev.to/rohansawant/installing-docker-and-docker-compose-on-the-raspberry-pi-in-5-simple-steps-3mgl
 
+## Installing Node JS
+
+https://www.instructables.com/id/Install-Nodejs-and-Npm-on-Raspberry-Pi/
