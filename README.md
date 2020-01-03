@@ -153,3 +153,8 @@ https://dev.to/rohansawant/installing-docker-and-docker-compose-on-the-raspberry
 ## Installing Node JS
 
 https://www.instructables.com/id/Install-Nodejs-and-Npm-on-Raspberry-Pi/
+
+## Enable Bluetooth on Ubuntu
+
+symptom: no bluetooth device found
+sudo hciattach /dev/ttyAMA0 bcm43xx 921600
