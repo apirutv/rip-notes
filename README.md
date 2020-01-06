@@ -158,3 +158,20 @@ https://www.instructables.com/id/Install-Nodejs-and-Npm-on-Raspberry-Pi/
 
 symptom: no bluetooth device found
 sudo hciattach /dev/ttyAMA0 bcm43xx 921600
+
+## measure core temperature
+
+https://www.raspberrypi.org/documentation/linux/usage/cron.md
+
+vcgencmd measure_temp
+
+## cron
+
+https://www.raspberrypi.org/documentation/linux/usage/cron.md
+
+https://crontab.guru/every-1-hour
+
+
+
+
+
