@@ -154,6 +154,12 @@ https://dev.to/rohansawant/installing-docker-and-docker-compose-on-the-raspberry
 
 https://www.instructables.com/id/Install-Nodejs-and-Npm-on-Raspberry-Pi/
 
+sudo apt-get install xz-utils
+
+unxz node-v12.14.1-linux-armv7l.tar.xz
+
+tar -xf node-v12.14.1-linux-armv7l.tar
+
 ## Enable Bluetooth on Ubuntu
 
 symptom: no bluetooth device found
