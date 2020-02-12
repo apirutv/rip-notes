@@ -177,6 +177,9 @@ https://www.raspberrypi.org/documentation/linux/usage/cron.md
 
 https://crontab.guru/every-1-hour
 
+## USB Ethernet
+
+https://www.hardill.me.uk/wordpress/2019/11/02/pi4-usb-c-gadget/
 
 
 
