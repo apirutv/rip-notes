@@ -185,5 +185,8 @@ https://www.hardill.me.uk/wordpress/2019/11/02/pi4-usb-c-gadget/
 
 https://www.element14.com/community/community/raspberry-pi/blog/2019/09/12/installing-pycharm-on-raspberry-pi
 
+## Setup Message Board
+
+https://toms3d.org/2019/09/19/building-a-digital-dashboard-software-setup/
 
 
