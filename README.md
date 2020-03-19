@@ -189,4 +189,10 @@ https://www.element14.com/community/community/raspberry-pi/blog/2019/09/12/insta
 
 https://toms3d.org/2019/09/19/building-a-digital-dashboard-software-setup/
 
+## Disable chromium can't update message
+
+add the following line to: /etc/chromium-browser/customizations/01-disable-update-check
+
+CHROMIUM_FLAGS="${CHROMIUM_FLAGS} --check-for-update-interval=31536000"
+
 
