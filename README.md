@@ -4,6 +4,9 @@ notes for raspberry pi
 ## check Pi model
 cat /proc/device-tree/model  
 
+## CPU Info
+cat /proc/cpuinfo
+
 ## IP address
 hostname -I
 
