@@ -7,7 +7,8 @@ Mirror site list:
 https://www.raspbian.org/RaspbianMirrors
 
 Change the mirrow site:  
-sudo vi /etc/apt/sources.list
+> sudo vi /etc/apt/sources.list
+
 ```
 # AV : change to specfic mirror server
 # DEFAULT
