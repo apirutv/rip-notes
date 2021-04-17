@@ -32,7 +32,10 @@ Mirror site list:
 https://www.raspbian.org/RaspbianMirrors
 
 Change the mirrow site:  
-> sudo vi /etc/apt/sources.list
+```
+sudo vi /etc/apt/sources.list
+```
+Edit the file as the below:
 
 ```
 # AV : change to specfic mirror server
@@ -49,20 +52,28 @@ more info here:
 https://tinylab.page/raspberry-pi-err-1-http-mirror1-ku-ac-th-fetch/
 
 ## check Pi model
+```
 cat /proc/device-tree/model  
+```
 
 ## CPU Info
+```
 cat /proc/cpuinfo
+```
 
 ## IP address
+```
 hostname -I
+```
 
 ## activate google voice hat
+```
 sudo nano /boot/config.txt  
 add these two lines to the end of the file:  
 dtoverlay=i2s-mmap  
 dtoverlay=googlevoicehat-soundcard  
 reboot the pi  
+```
 
 ## Fliping upside-down rpi 7 inch touch screen
 
