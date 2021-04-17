@@ -1,6 +1,9 @@
 # rip-notes
 notes for raspberry pi
 
+## check Pi model
+cat /proc/device-tree/model  
+
 ## IP address
 hostname -I
 
