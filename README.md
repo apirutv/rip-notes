@@ -8,7 +8,7 @@ https://www.raspbian.org/RaspbianMirrors
 
 Change the mirrow site:  
 sudo vi /etc/apt/sources.list
-
+'''
 # AV : change to specfic mirror server
 # DEFAULT
 #deb http://raspbian.raspberrypi.org/raspbian/ buster main contrib non-free rpi
@@ -19,6 +19,7 @@ deb http://mirror.nus.edu.sg/raspbian/raspbian/ buster main contrib non-free rpi
 # Uncomment line below then 'apt-get update' to enable 'apt-get source'
 #deb-src http://raspbian.raspberrypi.org/raspbian/ buster main contrib non-free rpi
 
+'''
 more info here:
 https://tinylab.page/raspberry-pi-err-1-http-mirror1-ku-ac-th-fetch/
 
