@@ -1,6 +1,27 @@
 # rip-notes
 notes for raspberry pi
 
+## Change APT-GET mirror site
+
+Mirror site list:  
+https://www.raspbian.org/RaspbianMirrors
+
+Change the mirrow site:  
+sudo vi /etc/apt/sources.list
+
+# AV : change to specfic mirror server
+# DEFAULT
+#deb http://raspbian.raspberrypi.org/raspbian/ buster main contrib non-free rpi
+# Khonkhan University
+#deb http://mirror.kku.ac.th/raspbian/raspbian/ buster main contrib non-free rpi
+# NUS School of Computing, Singapore
+deb http://mirror.nus.edu.sg/raspbian/raspbian/ buster main contrib non-free rpi
+# Uncomment line below then 'apt-get update' to enable 'apt-get source'
+#deb-src http://raspbian.raspberrypi.org/raspbian/ buster main contrib non-free rpi
+
+more info here:
+https://tinylab.page/raspberry-pi-err-1-http-mirror1-ku-ac-th-fetch/
+
 ## check Pi model
 cat /proc/device-tree/model  
 
