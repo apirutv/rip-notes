@@ -1,6 +1,31 @@
 # rip-notes
 notes for raspberry pi
 
+## Install Java 
+
+Default SDK
+```
+sudo apt update
+sudo apt install default-jdk
+java -version
+```
+
+Java 8
+```
+sudo apt update
+sudo apt install openjdk-8-jdk
+java -version
+```
+
+Uninstall Java
+```
+sudo apt remove default-jdk
+```
+
+More info:
+https://linuxize.com/post/install-java-on-raspberry-pi/
+
+
 ## Change APT-GET mirror site
 
 Mirror site list:  
