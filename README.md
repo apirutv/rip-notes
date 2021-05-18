@@ -1,6 +1,12 @@
 # rip-notes
 notes for raspberry pi
 
+
+## Configure Raspberry PI
+```
+sudo raspi-config 
+```
+
 ## SSH port forwarding
 ```
 ssh -L 1441:localhost:1441 -L 1442:localhost:1442 [remote host username]@[remote host IP]
