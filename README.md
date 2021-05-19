@@ -1,6 +1,16 @@
 # rip-notes
 notes for raspberry pi
 
+## Get CPU temperature - python
+```
+pip install gpiozero
+```
+```
+from gpiozero import CPUTemperature
+cpu = CPUTemperature()
+cpu.temperature
+```
+
 
 ## Configure Raspberry PI
 ```
