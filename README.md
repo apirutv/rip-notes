@@ -90,16 +90,12 @@ mmcblk0     179:0    0  59.5G  0 disk
 |-mmcblk0p1 179:1    0   256M  0 part /boot
 `-mmcblk0p2 179:2    0  59.2G  0 part /
 
+```
 
-
-WARNING:
+###*** WARNING:
 When the external drive not connected to the pi, it will boot up /w ‘root account locked’ error mode:
 https://samx18.io/blog/2017/11/05/piBootIssue.html
 
-
-
-
-```
 
 
 ## Get CPU temperature - python
