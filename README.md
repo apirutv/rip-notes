@@ -2,10 +2,15 @@
 notes for raspberry pi
 
 ## setup NAS
+
+### updates
 ```
 sudo apt-get update
 sudo apt-get upgrade
 
+```
+### File system supports
+```
 sudo apt-get install ntfs-3g
 
 sudo apt-get install exfat-utils exfat-fuse
@@ -14,8 +19,15 @@ sudo apt-get install samba samba-common-bin
 > if failed, install this dependency and try again:
 > sudo apt-get install libldb1=2:1.5.1+really1.4.6-3
 
+```
+### Create the NAS folder
+```
 sudo mkdir /RPINAS
 $ sudo chmod 777 /RPINAS
+
+```
+### Mount the external USB drive
+```
 
 lsblk
 
@@ -28,6 +40,10 @@ mmcblk0     179:0    0 59.5G  0 disk
 `-mmcblk0p2 179:2    0 59.2G  0 part /
 
 sudo mount /dev/sda2 /RPINAS/
+
+```
+### Setup Samba network folder
+```
 
 sudo vi /etc/samba/smb.conf
 
@@ -42,12 +58,18 @@ directory mask = 0777
 public = no
 force use = root
 
+```
+### Create NAS user
+```
 sudo adduser apirut
 
 sudo smbpasswd -a apirut
 
-sudo /etc/init.d/smbd restart
+```
+### Restart Samba
+```
 
+sudo /etc/init.d/smbd restart
 sudo /etc/init.d/nmbd restart
 
 lsblk
@@ -59,9 +81,17 @@ mmcblk0     179:0    0 59.5G  0 disk
 |-mmcblk0p1 179:1    0  256M  0 part /boot
 `-mmcblk0p2 179:2    0 59.2G  0 part /
 
+```
+### Setup FSTAB for auto mount
+```
+
 sudo vi /etc/fstab
 
 /dev/sda2 /RPINAS auto defaults, user 0 2
+
+```
+### Setup static IP
+```
 
 sudo vi /etc/dhcpcd.conf
 
@@ -73,6 +103,10 @@ static domain_name_servers=192.168.1.1
 umount /RPIRAS
 
 sudo reboot
+
+```
+### NOTES
+```
 
 THE CURRENT MOUNT POINT OF SSD256:
 
@@ -92,7 +126,7 @@ mmcblk0     179:0    0  59.5G  0 disk
 
 ```
 
-###*** WARNING:
+### *** WARNING:
 When the external drive not connected to the pi, it will boot up /w ‘root account locked’ error mode:
 https://samx18.io/blog/2017/11/05/piBootIssue.html
 
