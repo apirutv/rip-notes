@@ -1,6 +1,107 @@
 # rip-notes
 notes for raspberry pi
 
+## setup NAS
+```
+sudo apt-get update
+sudo apt-get upgrade
+
+sudo apt-get install ntfs-3g
+
+sudo apt-get install exfat-utils exfat-fuse
+
+sudo apt-get install samba samba-common-bin
+> if failed, install this dependency and try again:
+> sudo apt-get install libldb1=2:1.5.1+really1.4.6-3
+
+sudo mkdir /RPINAS
+$ sudo chmod 777 /RPINAS
+
+lsblk
+
+NAME        MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda           8:0    0  3.7T  0 disk 
+|-sda1        8:1    0  200M  0 part 
+`-sda2        8:2    0  3.7T  0 part 
+mmcblk0     179:0    0 59.5G  0 disk 
+|-mmcblk0p1 179:1    0  256M  0 part /boot
+`-mmcblk0p2 179:2    0 59.2G  0 part /
+
+sudo mount /dev/sda2 /RPINAS/
+
+sudo vi /etc/samba/smb.conf
+
+[Raspberry Pi 4_01 NAS Server]
+comment = "Pi4-01"
+path = /RPINAS
+read only = no
+writeable = yes
+browseable = yes
+create mask = 0777
+directory mask = 0777
+public = no
+force use = root
+
+sudo adduser apirut
+
+sudo smbpasswd -a apirut
+
+sudo /etc/init.d/smbd restart
+
+sudo /etc/init.d/nmbd restart
+
+lsblk
+NAME        MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda           8:0    0  3.7T  0 disk 
+|-sda1        8:1    0  200M  0 part 
+`-sda2        8:2    0  3.7T  0 part /RPINAS
+mmcblk0     179:0    0 59.5G  0 disk 
+|-mmcblk0p1 179:1    0  256M  0 part /boot
+`-mmcblk0p2 179:2    0 59.2G  0 part /
+
+sudo vi /etc/fstab
+
+/dev/sda2 /RPINAS auto defaults, user 0 2
+
+sudo vi /etc/dhcpcd.conf
+
+# setting static ip address
+static ip_address=192.168.1.125/24
+static routers=192.168.1.1
+static domain_name_servers=192.168.1.1
+
+umount /RPIRAS
+
+sudo reboot
+
+THE CURRENT MOUNT POINT OF SSD256:
+
+sudo mount /dev/sda4 /RPINAS/
+
+lsblk
+
+NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
+sda           8:0    0 232.9G  0 disk 
+|-sda1        8:1    0   529M  0 part 
+|-sda2        8:2    0    99M  0 part 
+|-sda3        8:3    0    16M  0 part 
+`-sda4        8:4    0 232.3G  0 part /RPINAS
+mmcblk0     179:0    0  59.5G  0 disk 
+|-mmcblk0p1 179:1    0   256M  0 part /boot
+`-mmcblk0p2 179:2    0  59.2G  0 part /
+
+
+
+WARNING:
+When the external drive not connected to the pi, it will boot up /w ‘root account locked’ error mode:
+https://samx18.io/blog/2017/11/05/piBootIssue.html
+
+
+
+
+```
+
+
 ## Get CPU temperature - python
 ```
 pip install gpiozero
