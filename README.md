@@ -56,7 +56,7 @@ browseable = yes
 create mask = 0777
 directory mask = 0777
 public = no
-force use = root
+force user = root
 
 ```
 ### Create NAS user
