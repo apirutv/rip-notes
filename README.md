@@ -334,6 +334,9 @@ sudo vi /home/pi/.bashrc
 echo "  >> starting Google assistant in 5 seconds, ^c to cancel ..."  
 sleep 5  
 /home/pi/python/voicekit-pi-gpio/voice_gpio.py
+
+sudo raspi-config
+> enable auto boot login for the text console
 ```
 
 ## which Wifi SSID being connected to
