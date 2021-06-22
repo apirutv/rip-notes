@@ -1,6 +1,14 @@
 # rip-notes
 notes for raspberry pi
 
+## Installing numpy on Pi Zero
+
+don't use pip, use apt instead
+(pip freezed on Pi Zero)
+```
+apt install python3-numpy
+```
+
 ## setup NAS
 
 ### updates
