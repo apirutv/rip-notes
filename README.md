@@ -1,6 +1,10 @@
 # rip-notes
 notes for raspberry pi
 
+## Fresh install w/o screen and SSH via USB
+
+https://desertbot.io/blog/ssh-into-pi-zero-over-usb
+
 ## Installing numpy on Pi Zero
 
 don't use pip, use apt instead
