@@ -1,6 +1,25 @@
 # rip-notes
 notes for raspberry pi
 
+## SD Card Disk Image
+create image backup of PI SD Card   
+insert CD card to a card leader on Mac
+```
+diskutil list
+
+/dev/disk2 (external, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:     FDisk_partition_scheme                        *63.9 GB    disk2
+   1:             Windows_FAT_32 ⁨boot⁩                    268.4 MB   disk2s1
+   2:                      Linux ⁨⁩                        63.6 GB    disk2s2
+
+```
+create the image file using dd
+```
+sudo dd bs=4m if=/dev/disk2 | gzip > PI4.img.gz
+```
+
+
 ## PI4 USB-C network
 
 https://www.hardill.me.uk/wordpress/2019/11/02/pi4-usb-c-gadget/
