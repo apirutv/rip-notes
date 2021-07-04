@@ -1,6 +1,10 @@
 # rip-notes
 notes for raspberry pi
 
+## PI4 USB-C network
+
+https://www.hardill.me.uk/wordpress/2019/11/02/pi4-usb-c-gadget/
+
 ## Fresh install w/o screen and SSH via USB
 
 https://desertbot.io/blog/ssh-into-pi-zero-over-usb
