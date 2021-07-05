@@ -1,6 +1,11 @@
 # rip-notes
 notes for raspberry pi
 
+## Monitor log file
+```
+sudo tail -f /greengrass/v2/logs/greengrass.log
+```
+
 ## SD Card Disk Image
 create image backup of PI SD Card   
 insert CD card to a card leader on Mac
