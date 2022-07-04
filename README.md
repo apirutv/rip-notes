@@ -1,6 +1,21 @@
 # rip-notes
 notes for raspberry pi
 
+## Dark Mode
+
+```
+lxappearance
+```
+Select one of the dark themes
+
+Note:
+lxappearance throws error - segment error - fix by:
+```
+sudo apt remove lxappearance-obconf
+```
+try again
+
+
 ## Monitor log file
 ```
 sudo tail -f /greengrass/v2/logs/greengrass.log
