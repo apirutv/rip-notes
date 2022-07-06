@@ -1,6 +1,19 @@
 # rip-notes
 notes for raspberry pi
 
+## Install PyCharm
+
+Install Java
+
+```
+sudo apt install openjdk-11-jdk
+java -version
+```
+
+Download and run PyCharm
+
+https://raspberrytips.com/install-pycharm-raspberry-pi/
+
 ## Dark Mode
 
 ```
