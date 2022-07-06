@@ -229,10 +229,10 @@ sudo apt install default-jdk
 java -version
 ```
 
-Java 8
+Java 11
 ```
 sudo apt update
-sudo apt install openjdk-8-jdk
+sudo apt install openjdk-11-jdk
 java -version
 ```
 
