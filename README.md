@@ -16,6 +16,7 @@ Install nodejs
 
 ```
 sudo apt install nodejs
+```
 
 check the version
 ```
