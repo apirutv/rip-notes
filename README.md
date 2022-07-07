@@ -10,7 +10,7 @@ sudo pip install notebook
 ```
 ## Access Jupyter Notebook from Remote Machine
 
-create SSH port forwarding on the remote machine
+Create SSH port forwarding on the remote machine
 
 ```
 ssh -L 8080:localhost:8080 <REMOTE_USER>@<REMOTE_HOST>
@@ -25,7 +25,7 @@ jupyter notebook list
 http://localhost:8888/?token=f6a3d0246986f801d60fa49df20b32ce260e291ae64bbd0c :: /home/pi/.local/bin
 http://localhost:8889/?token=fc81ab54327d53144af8edfb698198c24517c3f08c268694 :: /home/pi
 ```
-copy the token and paste it in the browser on the remote machine when asked.
+Copy the token and paste it in the browser on the remote machine when asked.
 
 Optional: start jupyter notebook without the browser
 ```
