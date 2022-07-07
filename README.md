@@ -83,6 +83,14 @@ Optional: start jupyter notebook without the browser
 jupyter notebook --no-browser --port=8080
 ```
 
+Start Jupyterlab
+```
+jupyter-lab
+```
+
+Changing Jupyterlab to dark modoe
+Setting > Theme > Jupyterlab Dark
+
 
 ## Install OpenCV on Pi
 
