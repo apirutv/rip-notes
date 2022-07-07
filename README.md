@@ -1,6 +1,36 @@
 # rip-notes
 notes for raspberry pi
 
+## Install Code Server
+
+Install node
+```
+sudo apt install nodejs
+sudo npm install -g n
+sudo n stable
+```
+Install yarn
+```
+sudo npm install -g yarn
+```
+Install Code Server /w yarn
+```
+sudo yarn global add code-server
+```
+Change password and allow remote browser by change binding address to 0.0.0.0
+```
+sudo vi .config/code-server/config.yaml
+
+bind-addr: 0.0.0.0:8080
+auth: password
+password: Anubis2K
+cert: false
+```
+Start the code server
+```
+code-server
+```
+
 ## Install NodeJS
 
 Install nodejs source
