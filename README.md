@@ -40,11 +40,13 @@ Cut and paster the following content, change the password
 [Unit]
 Description=code-server
 After=nginx.service
+
 [Service]
 Type=simple
 Environment=PASSWORD='ENTER YOUR PASSWORD'
 ExecStart=/usr/local/bin/code-server --bind-addr 0.0.0.0:8080 --user-data-dir /var/lib/code-server --auth password
 Restart=always
+
 [Install]
 WantedBy=multi-user.target
 ```
