@@ -1,8 +1,47 @@
 # rip-notes
 notes for raspberry pi
 
-## Install PyCharm
 
+## Install Jupyter Lab and Notebook
+
+```
+sudo pip install jupyterlab
+sudo pip install notebook
+```
+## Access Jupyter Notebook from Remote Machine
+
+create SSH port forwarding on the remote machine
+
+```
+ssh -L 8080:localhost:8080 <REMOTE_USER>@<REMOTE_HOST>
+```
+
+In local machine browser go to: http://localhost:8080/
+
+Find the token by execute this command on the host machine
+```
+jupyter notebook list
+
+http://localhost:8888/?token=f6a3d0246986f801d60fa49df20b32ce260e291ae64bbd0c :: /home/pi/.local/bin
+http://localhost:8889/?token=fc81ab54327d53144af8edfb698198c24517c3f08c268694 :: /home/pi
+```
+copy the token and paste it in the browser on the remote machine when asked.
+
+Optional: start jupyter notebook without the browser
+```
+jupyter notebook --no-browser --port=8080
+```
+
+
+## Install OpenCV on Pi
+
+```
+pip install opencv-python
+sudo apt-get install libatlas-base-dev
+pip install -U numpy
+```
+
+## Install PyCharm
 Install Java
 
 ```
