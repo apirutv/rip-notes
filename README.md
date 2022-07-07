@@ -1,6 +1,27 @@
 # rip-notes
 notes for raspberry pi
 
+## Install NodeJS
+
+Install nodejs source
+(if recievedf out of support warning, try increase the version number)
+
+Note: much run the curl as 'su' (can't sudo)
+
+```
+sudo su
+curl -fsSL https://deb.nodesource.com/setup_18.x | bash -
+```
+Install nodejs
+
+```
+sudo apt install nodejs
+
+check the version
+
+```
+node --version
+```
 
 ## Install Jupyter Lab and Notebook
 
