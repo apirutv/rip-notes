@@ -31,6 +31,35 @@ Start the code server
 code-server
 ```
 
+Run code-server as a service
+```
+sudo nano /lib/systemd/system/code-server.s
+```
+Cut and paster the following content, change the password
+```
+[Unit]
+Description=code-server
+After=nginx.service
+[Service]
+Type=simple
+Environment=PASSWORD='ENTER YOUR PASSWORD'
+ExecStart=/usr/local/bin/code-server --bind-addr 0.0.0.0:8080 --user-data-dir /var/lib/code-server --auth password
+Restart=always
+[Install]
+WantedBy=multi-user.target
+```
+Create the service and enable it
+```
+sudo systemctl start code-server
+sudo systemctl enable code-server
+```
+Check the status
+```
+sudo systemctl status code-server
+```
+
+https://medium.com/swlh/vs-code-for-ipad-and-other-phones-and-tablets-252e8cace2aa
+
 ## Install NodeJS
 
 Install nodejs source
