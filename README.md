@@ -38,7 +38,7 @@ Setting (the gear icon) > Color Theme
 
 Run code-server as a service
 ```
-sudo nano /lib/systemd/system/code-server.s
+sudo nano /lib/systemd/system/code-server.service
 ```
 Cut and paster the following content, change the password
 ```
