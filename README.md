@@ -31,6 +31,11 @@ Start the code server
 code-server
 ```
 
+Dark Mode
+```
+Setting (the gear icon) > Color Theme
+```
+
 Run code-server as a service
 ```
 sudo nano /lib/systemd/system/code-server.s
