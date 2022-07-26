@@ -1,6 +1,17 @@
 # rip-notes
 notes for raspberry pi
 
+## Install and Setup SIM7600x 5G Dongle
+
+Install minicom and use PPP
+https://www.twilio.com/docs/iot/supersim/getting-started-super-sim-raspberry-pi-waveshare-4g-hat
+
+Use RNDIS
+https://www.waveshare.com/wiki/Raspberry_Pi_networked_via_RNDIS
+
+Product page:
+https://www.waveshare.com/wiki/SIM7600G-H_4G_DONGLE
+
 ## Install Code Server
 
 Install node
